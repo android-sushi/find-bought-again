@@ -23,7 +23,7 @@ params = {
     # 波ダッシュ、全角チルダ
     'q': '#はぁ〜また買っちゃった OR #はぁ～また買っちゃった -filter:retweets',
     'result_type': 'recent',
-    'count': 100,
+    'count': 10,
 }
 
 print('get res...')
@@ -43,7 +43,7 @@ for row in tweets['statuses']:
         oembed_url = f'https://twitter.com/{screen_name}/status/{id}'
         oembed_params = {
             'url': oembed_url,
-            'maxwidth': 220,
+            # 'maxwidth': 280,
             'align': 'center',
             'hide_thread': 'true',
         }
