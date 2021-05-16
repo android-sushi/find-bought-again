@@ -43,7 +43,6 @@ for row in tweets['statuses']:
         oembed_url = f'https://twitter.com/{screen_name}/status/{id}'
         oembed_params = {
             'url': oembed_url,
-            # 'maxwidth': 280,
             'align': 'center',
             'hide_thread': 'true',
         }
